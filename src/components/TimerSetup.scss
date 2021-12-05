@@ -1,0 +1,8 @@
+@use '../css' as *;
+
+.timer-container {
+    font-size: $font-lg;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}

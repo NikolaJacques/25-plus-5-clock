@@ -1,0 +1,10 @@
+@use '../css' as *;
+
+.buttons {
+    display:flex;
+    font-size: $font-lg;
+}
+
+.buttons > * + * {
+    margin-left: 0.5em;
+}

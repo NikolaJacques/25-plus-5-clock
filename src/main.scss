@@ -1,0 +1,14 @@
+@use 'css' as *;
+
+body {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: $bg-clr;
+    color: $font-clr;
+}
+

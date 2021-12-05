@@ -1,0 +1,16 @@
+@use '../css/' as *;
+
+.container {
+    min-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > h1 {
+    font-size: $font-xl;
+}
+
+.container > * + * {
+    margin-top: 1em;
+}

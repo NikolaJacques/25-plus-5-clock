@@ -1,0 +1,17 @@
+@use '../css/' as *;
+
+.counter {
+    margin-top: 2em;
+    padding: 1em 2em;
+    border: 10px solid $border-clr;
+    border-radius: 15%;
+}
+
+.counter > h2 {
+    font-size: $font-lg;
+}
+
+.counter > p {
+    font-size: $font-xxl;
+}
+

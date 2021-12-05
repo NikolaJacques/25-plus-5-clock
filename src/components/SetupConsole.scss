@@ -1,0 +1,24 @@
+@use '../css' as *;
+
+.console-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.console-container > * + * {
+    margin-top: 0.33em;
+    
+}
+
+.setup-container {
+    display:flex;
+    justify-content: center;
+}
+
+.setup-container > * + * {
+    margin-left: 0.5em;
+}
+
+.title {
+    text-align: center;
+}
