@@ -16,11 +16,15 @@ function reducer(state, action) {
             return { ...state, 
                     [phase]: state[phase]>60?state[phase]-60:state[phase]}
         case ACTIONS.UPDATE_TIMER:
-            return {...state, timer: action.payload.newTime}
+            return {...state, 
+                    timer: action.payload.newTime}
         case ACTIONS.START_STOP_TIMER:
-            return {...state, ongoing: true, pause:!state.ongoing?false:!state.pause}
+            return {...state, 
+                    ongoing: true, 
+                    pause:!state.ongoing?false:!state.pause}
         case ACTIONS.CHANGE_PHASE:
-            return {...state, phase: action.payload.newPhase}    
+            return {...state, 
+                    phase: action.payload.newPhase}    
         default:
             return state
     }

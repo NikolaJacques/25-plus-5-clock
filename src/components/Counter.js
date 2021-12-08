@@ -9,7 +9,7 @@ export default function Counter() {
     const convertTime = (input) => {
         const seconds = Math.floor(input)%60
         const minutes = Math.floor(input/60)
-        return `${minutes}:${seconds.toString().length<2?'0'+seconds:seconds}` 
+        return `${minutes.toString().length<2?'0'+minutes:minutes}:${seconds.toString().length<2?'0'+seconds:seconds}` 
     }
 
     return (
