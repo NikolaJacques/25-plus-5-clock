@@ -12,7 +12,7 @@ export default function Container() {
             <TimerSetup />
             <Counter />
             <Buttons />
-            <Audio />
+            <Audio/>
         </div>
     )
 }

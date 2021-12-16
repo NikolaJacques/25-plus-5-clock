@@ -14,18 +14,17 @@ export default function Audio() {
         }
     },[state.timer])
 
+    // --> original implementation
     useEffect (() => {
         if (state.ongoing===false){
-            audioElement.current.pause()
             audioElement.current.load()
         }
     },[state.ongoing])
+    // original implementation <--
 
     return (
-        <>
-            <audio id="beep" ref={audioElement} >
-                <source src="Low-pitched-bell-strike-sound.mp3" type='audio/mpeg'/>     
-            </audio>
-        </>
+        <audio id="beep" ref={audioElement} >
+            <source src="Low-pitched-bell-strike-sound.mp3" type='audio/mpeg'/>     
+        </audio>
     )
 }
